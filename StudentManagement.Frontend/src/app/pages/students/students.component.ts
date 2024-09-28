@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentService } from 'proxy/services/student.service';
 
+
 @Component({
   selector: 'app-students',
   templateUrl: './students.component.html',
@@ -14,10 +15,10 @@ export class StudentsComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("Hey")
-    // this.studentService.getAll()
-    //   .subscribe((res: any) => {
-    //     console.log(res)
-    //   })
+    this.studentService.getAll()
+      .subscribe((res: any) => {
+        console.log(res)
+      })
   }
 
 }
