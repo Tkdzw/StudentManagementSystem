@@ -3,37 +3,54 @@
         <div class="card">
             <div class="card-header">
                 <h4 class="card-title"> Students</h4>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Primary</button>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table">
                         <thead class=" text-primary">
                             <th>
-                                Name
+                                #
                             </th>
                             <th>
-                                Country
+                                Firstname
                             </th>
                             <th>
-                                City
+                                Lastname </th>
+                            <th>
+                                Email
                             </th>
                             <th class="text-right">
-                                Salary
+                                Phone Number
+                            </th>
+                            <th class="text-right">
+                                Age
                             </th>
                         </thead>
-                        <tbody>
+                        <tbody *ngFor="let student of students">
                             <tr>
                                 <td>
-                                    Dakota Rice
+                                    {{student.id}}
                                 </td>
                                 <td>
-                                    Niger
+                                   {{student.firstName}}
                                 </td>
                                 <td>
-                                    Oud-Turnhout
+                                    {{student.lastName}}
+                                </td>
+                                <td>
+                                    {{student.email}}
                                 </td>
                                 <td class="text-right">
-                                    $36,738
+                                    {{student.phoneNumber}}
+                                </td>
+                                <td class="text-right">
+                                    {{student.age}}
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-success btn-sm">Edit</button>
+                                    <button type="button" class="btn btn-primary btn-sm">View</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -41,5 +58,9 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal-dialog modal-dialog-centered" id="#myModal" >
+            ...
+          </div>
     </div>
 </div>

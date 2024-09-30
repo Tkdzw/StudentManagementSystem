@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentDto } from 'proxy/interfaces/student-dto';
 import { StudentService } from 'proxy/services/student.service';
 
 
@@ -8,16 +9,20 @@ import { StudentService } from 'proxy/services/student.service';
   styleUrls: ['./students.component.scss']
 })
 export class StudentsComponent implements OnInit {
+  students: StudentDto[] = []
+  student: StudentDto = {} as StudentDto;
 
   constructor(
     private studentService: StudentService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() :void {
     console.log("Hey")
     this.studentService.getAll()
       .subscribe((res: any) => {
+        this.students= res
         console.log(res)
+        console.log(this.students)
       })
   }
 
