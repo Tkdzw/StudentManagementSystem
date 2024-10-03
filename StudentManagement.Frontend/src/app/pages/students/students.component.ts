@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { StudentDto } from 'proxy/interfaces/student-dto';
 import { StudentService } from 'proxy/services/student.service';
 
@@ -13,7 +14,8 @@ export class StudentsComponent implements OnInit {
   student: StudentDto = {} as StudentDto;
 
   constructor(
-    private studentService: StudentService
+    private studentService: StudentService,
+    public activeModal: NgbActiveModal
   ) { }
 
   ngOnInit() :void {
@@ -24,6 +26,10 @@ export class StudentsComponent implements OnInit {
         console.log(res)
         console.log(this.students)
       })
+  }
+
+  close(){
+    this.activeModal.close()
   }
 
 }
