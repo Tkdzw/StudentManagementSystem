@@ -1,42 +1,45 @@
-## [2.4.0] 2022-12-08
-### Updates
-- update to Angular 14
-- update all dependencies to match Angular 14 version
+# Changelog
 
-## [2.3.0] 2022-05-06
-### Updates
-- update to Angular 13
-- update all dependencies to match Angular 13 version
-- fixed cosmetic issue
+# 17.0.0
+**Implemented New Features and Enhancements:**
+- Upgrade to PrimeNG 17
+- Upgrade to Angular 17
 
-## [2.2.0] 2020-10-08
-### Updates
-- update to Angular 10
-- update all dependencies to match Angular 10 version
+## 16.0.0
+**Migration Guide**
+- Upgrade to PrimeNG 16
+- Upgrade to Angular 16
+- Update theme files
 
-## [2.1.0] 2020-03-16
-### Updates
-- update to Angular 9
-- update all dependencies to match Angular 9 version
+## 15.0.0
+**Migration Guide**
+- Upgrade to PrimeNG 15
+- Upgrade to Angular 15
+  
+**Implemented New Features and Enhancements:**
+- Update to PrimeNG 15
+- Update to Angular 15
 
-## [2.0.0] 2019-17-07
-### Updates
-- update from Bootstrap 3 to Bootstrap 4
-- update to Angular 8
-- update all dependencies to match Angular 8 version
-- change the product structure
-### Added
-- useHash
-- online doc
-- paper 2 styles
-- fixed plugin
-- copyright
-- issue_template
-### Bug Fixing
-- fix sidebar scroll
+## 14.0.5
 
-## [1.0.1] 2017-12-07
-- fixed errors for npm start
+- Router updates
 
-## [1.0.0] 2017-06-27
-### Initial Release
+## 14.0.4
+
+- Updated UI kit demos
+- Updated PrimeNG
+- Enabled lint
+
+## 14.0.2
+
+- Updated to PrimeNG 14.0.2.
+
+## 14.0.0
+
+- Folder structure updated.
+- Replace app.config.service by layout.service.
+- Updated to PrimeNG 14.
+- Updated to Angular 14.
+- Strict mode support added.
+- Documentation updated.
+- Added max-width in large screens for landing.
